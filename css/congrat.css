@@ -1,0 +1,20 @@
+h1{
+    font-size: 2.5em;
+    padding-bottom: 1vh;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 5vh;
+}
+
+.listing{
+    display: block;
+}
+
+h2{
+    font-size: 2.3em;
+    margin-bottom: 8vh;
+}
+
+button{
+    width: 35vw;
+    height: 8vh;
+}

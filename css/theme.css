@@ -1,0 +1,66 @@
+/*Styling for the choices div*/
+#choices{
+    margin-top: 40vh;
+}
+
+/*Styling for the questions div*/
+#questions{
+    height: 100%;
+}
+
+/*Styling for the home button*/
+#home{
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    border: none;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+/*styling for the question and answer*/
+#qash{
+    margin-top: 40%;
+}
+#q{
+    font-size: 2em;
+}
+#a{
+    font-size: 1.5em;
+}
+
+/*styling for the show answer and next buttons*/
+#show, #next{
+    width: 40vw;
+    height: 10vh;
+    font-size: 1.3em;
+}
+#show:disabled, #next:disabled {
+    width: 40.5vw;
+    height: 10.5vh;
+    font-size: 1.3em;
+    color: gray;
+}
+
+/*styling for the player div, their score, and the buttons to add points*/
+.three{
+    justify-content: center;
+    display: flex;
+}
+.three div{
+    margin: 2%;
+}
+.add{
+    width: 30vw;
+    height: 5vh;
+    padding: 5%;
+}
+.btns button{
+    width: 25vw;
+    height: 5vh;
+    font-size: 1.1em;
+}
+#medium{
+    margin: 0% 1vw;
+}

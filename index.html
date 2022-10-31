@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAME TITLE</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <script src="js/index.js" defer></script>
+    <!--div for the splash screen-->
+    <div id="splashScreen">
+      <img src="assets/logo.png" alt="" />
+      <h1>By Lily DeHaven</h1>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+    </div>
+
+    <!--div for screen 1-->
+    <div id="board">
+      <h1>Road Trip Trivia</h1>
+      <h2>Add players (up to six)</h2>
+      <button id="htp" onclick="htp()">
+        <img src="assets/q.png" alt="" />
+      </button>
+      <!--div for players-->
+      <div>
+        <div class="player" id="player1">
+          <input type="text" id="playerName1" />
+          <button onclick="saveName()" id="save1">Save</button>
+        </div>
+        <br />
+        <div class="player" id="player2">
+          <input type="text" id="playerName2" />
+          <button onclick="saveName()" id="save2">Save</button>
+        </div>
+        <br />
+        <div class="player" id="player3">
+          <input type="text" id="playerName3" />
+          <button onclick="saveName()" id="save3">Save</button>
+        </div>
+        <br />
+        <div class="player" id="player4">
+          <input type="text" id="playerName4" />
+          <button onclick="saveName()" id="save4">Save</button>
+        </div>
+        <br />
+        <div class="player" id="player5">
+          <input type="text" id="playerName5" />
+          <button onclick="saveName()" id="save5">Save</button>
+        </div>
+        <br />
+        <div class="player" id="player6">
+          <input type="text" id="playerName6" />
+          <button onclick="saveName()" id="save6">Save</button>
+        </div>
+      </div>
+      <div id="addPlayer">
+        <button>Add Player</button>
+      </div>
+
+      <!--div for the themes-->
+      <div id="allThemes">
+        <h2>Choose your theme!</h2>
+        <button id="theme1">Pop Culture</button>
+        <br />
+        <button id="theme2">Music</button>
+        <br />
+        <button id="theme3">U.S. Geography</button>
+      </div>
+    </div>
+
+    <!--div for the help screen-->
+    <div id="htpDiv">
+      <button id="back" onclick="back()">
+        <img src="assets/b.png" alt="" />
+      </button>
+      <h1>How to Play</h1>
+      <p>
+        Start with entering you and your friend's names, choose your theme, pick
+        the difficulty, then play!
+      </p>
+      <h2>Scoring</h2>
+      <p>
+        Add a point when someone gets the question correct! Scoring for each
+        question goes as follows:
+      </p>
+      <div id="points">
+        <h4>Easy: 1 pt</h4>
+        <h4>Medium: 3 pts</h4>
+        <h4>Hard: 5 pts</h4>
+      </div>
+      <h2>Other Ways to Play</h2>
+      <h5>
+        <h3>Competitive</h3>
+        <p>Only give points to the person who can answer the question first!</p>
+      </h5>
+    </div>
+  </body>
+</html>

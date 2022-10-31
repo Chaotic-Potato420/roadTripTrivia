@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+  </head>
+  <body>
+    <script src="../js/theme1.js" defer></script>
+    <!--div for the difficulty choices-->
+    <div id="choices">
+      <h1>Choose the mode</h1>
+      <div class="btns">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+      </div>
+    </div>
+
+    <!--div for the question and answer-->
+    <div id="questions">
+      <!--home button-->
+      <button id="home">
+        <img src="../assets/h.png" alt="" />
+      </button>
+      <!--div for the question and answer-->
+      <div id="qash">
+        <h1 id="q">QUESTION</h1>
+        <h3 id="a">Answer</h3>
+        <!--div for the show answer and next question buttons-->
+        <div>
+          <button onclick="showAnswer()" id="show">Show Answer</button>
+          <button onclick="next()" id="next">Next Question</button>
+        </div>
+      </div>
+      <!--div that shows each player, their score, and the button to add points-->
+      <div id="players">
+        <div class="three">
+          <div id="player1">
+            <h2 id="playerName1"></h2>
+            <h3 id="player1Score">0</h3>
+            <button onclick="p1ap()" id="addOne" class="add">Add Point</button>
+          </div>
+          <div id="player2">
+            <h2 id="playerName2"></h2>
+            <h3 id="player2Score">0</h3>
+            <button onclick="p2ap()" id="addTwo" class="add">Add Point</button>
+          </div>
+          <div id="player3">
+            <h2 id="playerName3"></h2>
+            <h3 id="player3Score">0</h3>
+            <button onclick="p3ap()" id="addThree" class="add">
+              Add Point
+            </button>
+          </div>
+        </div>
+        <div class="three">
+          <div id="player4">
+            <h2 id="playerName4"></h2>
+            <h3 id="player4Score">0</h3>
+            <button onclick="p4ap()" id="addFour" class="add">Add Point</button>
+          </div>
+          <div id="player5">
+            <h2 id="playerName5"></h2>
+            <h3 id="player5Score">0</h3>
+            <button onclick="p5ap()" id="addFive" class="add">Add Point</button>
+          </div>
+          <div id="player6">
+            <h2 id="playerName6"></h2>
+            <h3 id="player6Score">0</h3>
+            <button onclick="p6ap()" id="addSix" class="add">Add Point</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

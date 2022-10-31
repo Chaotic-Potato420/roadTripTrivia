@@ -1,0 +1,134 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*Styling for the splash screen animation and div*/
+    #splashScreen {
+        z-index: 10;
+        background-color: var(--accent-color);
+        width: 100vw;
+        height: 101vh;
+        color: white;
+        justify-content: center;
+        margin: -2%;
+        padding: 0;
+    }
+    #splashScreen img {
+        margin-top: 25%;
+    }
+    #splashScreen h1 {
+        font-size: 1.5em;
+        margin-bottom: 2vh;
+    }
+    /*--styling for the progess bar on the splash screen*/
+    #myProgress {
+        width: 75%;
+    }
+    #myBar {
+        width: 10%;
+        height: 15px;
+        background-color: #ffde59;
+        text-align: center;
+        color: white;
+        margin-left: 15%;
+        border-radius: 20px;
+    }
+
+    /*Styling for the first screen on index.html*/
+    #board h1 {
+        margin-top: 8vh;
+    }
+    /*--styling for the question button*/
+    #htp {
+        background-color: white;
+        border: none;
+        position: absolute;
+        top: 2.5%;
+        right: 4.5%;
+        animation: blink 0.8s linear 2;
+    }
+    /*--animation for the question button*/
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+    /*styling for the player names*/
+    .player input {
+        border-bottom: 2px solid black;
+        margin-bottom: 2vh;
+        font-size: 1.5em;
+        height: 5.5vh;
+        width: 40vw;
+    }
+    .player button{
+        border-radius: 5px;
+        height: 7vh;
+        width: 18vw;
+        margin-bottom: 2vh;
+    }
+    /*--styling for the add players button*/
+    #addPlayer {
+        display: flex;
+        justify-content: right;
+        padding-bottom: 2vh;
+    }
+    #addPlayer button {
+        padding: 4%;
+    }
+    /*styling for the theme buttons*/
+    #allThemes {
+        border-top: 5px solid var(--accent-color);
+        margin-top: 3vh;
+        justify-content: center;
+    }
+    #allThemes h2 {
+        margin-bottom: -2vh;
+    }
+    #allThemes button {
+        width: 35vw;
+        height: 10vh;
+        margin-top: 5vh;
+        font-size: 1.3em;
+    }
+
+    /*Styling for the help screen*/
+    #htpDiv {
+        margin-bottom: 8vh;
+        justify-content: center;
+    }
+    /*--back button*/
+    #back {
+        background-color: white;
+        border: none;
+        position: absolute;
+        bottom: -5%;
+        left: 3%;
+    }
+    /*styling for the rest of the help screen*/
+    #htpDiv p,
+    #htpDiv h5 {
+        font-size: 1.2em;
+    }
+    #htpDiv h4 {
+        font-size: 1.15em;
+        font-weight: 500;
+    }
+    #htpDiv li {
+        list-style: none;
+    }
+    #htpDiv h2 {
+        margin-top: 5vh;
+        margin-bottom: -2vh;
+        font-size: 2em;
+        padding-top: 1vh;
+        border-top: 2px solid var(--accent-color);
+    }
+    #htpDiv h3 {
+        font-size: 1.5em;
+        margin-bottom: -1vh;
+    }
+    #htpDiv #points {
+        margin-left: 12vw;
+        width: 65vw;
+        border: 3px solid var(--accent-color);
+        padding: 3%;
+    }
+}
